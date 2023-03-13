@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexbox assignment</title>
+    <link rel="stylesheet" href="./flex.css" />
+
+    <style>
+        .square {
+    width: 100px;
+    height: 100px;
+    background-color: #73dab2;
+}
+
+.flex {
+    margin: 10px;
+}
+
+.flexflexOne{
+    margin: 50px;
+    display: flex;
+
+}
+.flexflexOne .square{
+    margin: 5px;
+}
+
+.flexflexTwo{
+    display: flex;
+    flex-direction: column;
+}
+.flexflexTwo .square{
+    margin: 2px;
+}
+
+.flexflexThree{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flexflexThree .square{
+    margin: 2px;
+}
+
+.flexflexFour{
+    margin: 50px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.flexflexFour .square{
+    background-color: #3d8b6d;
+    margin: 5px;
+}
+
+.flexflexFive{
+    margin: 50px;
+    width: 350px;
+    display: flex;
+}
+  
+.flexflexFive .square{
+    background-color:  #0b6643;
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+
+}
+
+.flexflexFive #grow{
+    display: flex;
+    flex-grow: 2;
+}
+
+.flexflexSix{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.flexflexSix .one {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.flexflexSix .two {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d6d6d6;
+}
+
+.flexflexSix .three {
+    display: flex ;
+    justify-content: space-evenly;
+}
+
+.flexflexSeven {
+    margin: 50px;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    flex-direction: row;
+
+}
+
+.flexflexSeven .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexflexSeven .two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #d6d6d6;
+}
+
+.flexflexSeven .three {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.flexflexSeven .four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d6d6d6;
+}
+
+.flexflexEight{
+    margin: 50px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    background-color: #eeeeee;
+}
+.flexflexEight .one {
+    display: flex;
+    align-items: center;
+}
+.flexflexEight .two {
+    display: flex;
+    align-items: flex-end;
+}
+.flexflexEight .three {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flexflexNine {
+    height: 250px;
+    width: 450px;
+    display: flex;
+    background-color: #eeeeee;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.flexflexNine #special {
+    display: flex;
+    align-self: flex-end;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="flexflexOne">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="flexflexTwo">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="flexflexThree">
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+    </div>
+
+    <div class="flexflexFour">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="flexflexFive">
+        <div class="square"></div>
+        <div class="square" id="grow"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="flexflexSix">
+        <div class="one">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="flexflexSeven">
+        <div class="one">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="four">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="flexflexEight">
+        <div class="one">
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="flexflexNine">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square" id="special"></div>
+        <div class="square"></div>
+    </div>
+
+</body>
+</html>
+</body>
+</html>
